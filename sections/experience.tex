@@ -1,0 +1,70 @@
+\documentclass[letter,10pt]{article}
+\usepackage{TLCresume}
+\usepackage{amsmath}
+\begin{document}
+
+%%====================
+%% EXPERIENCE ?
+%%====================
+%\subsection{{ROLE / PROJECT A \hfill MMM YYYY --- Present}}
+%\subtext{company A \hfill somewhere, state}
+%\begin{zitemize}
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+%\item Suspendisse pretium elit quis ullamcorper ultricies.
+%\item Morbi a nisl sit amet massa ultricies fermentum.
+%\item Sed a diam et turpis tempor venenatis eget eget ipsum.
+%\item Vestibulum fermentum justo vitae aliquet accumsan.
+%\end{zitemize}
+
+%====================
+% EXPERIENCE A
+%====================
+\subsection{{Software Engineer \hfill Oct 2022 --- Present}}
+\subtext{Exness, full-time \hfill Remote}
+\begin{zitemize}
+\item Work in the anti-fraud team. Development of various tools that help fight fraudsters, including: generation of reports, alerts, services analyzing suspicious actions.
+\end{zitemize}
+
+%====================
+% EXPERIENCE B
+%====================
+\subsection{{Software Engineer \hfill Sep 2021 --- Jul 2022}}
+\subtext{Yandex, full-time \hfill Saint Petersburg}
+\begin{zitemize}
+\item Created a new service in production responsible for couriers' salary management. Prior to the creation of the service, managers had to waste time manually adjusting salaries and assigning attributes to couriers.
+\item Optimized the way couriers are assigned to orders, upgraded the algorithm for orders grouping in batches. This made it possible to distribute couriers more efficiently between orders, which led to a decrease in declines (by 10\%) and couriers' latenesses (almost twice) and resulted in company profit.
+\end{zitemize}
+
+%====================
+% EXPERIENCE C
+%====================
+\subsection{{Software Engineer \hfill Sep 2020 --- Aug 2021}}
+\subtext{Wargaming.net, full-time \hfill Saint Petersburg}
+\begin{zitemize}
+\item Optimized render process by reducing GPU draw calls count, which contributed to a significant increase in FPS, especially on older computers. On average resulted in a +5 FPS performance win.
+\item Developed a template library in C++ that allows to define vertex formats and use them in compile-time computations. Before the library was created developers used to define them in XML format and perform parsing in runtime.
+\end{zitemize}
+
+%====================
+% EXPERIENCE D
+%====================
+\subsection{{Software Engineer \hfill Jul 2019 --- Aug 2020}}
+\subtext{TradingView, full-time \hfill Saint Petersburg}
+\begin{zitemize}
+\item Redesigned the service responsible for core application data supply. The code has become cleaner and more resistant to various errors. CPU Usage decreased by 5-10\%.
+\item Developed a framework for Integration Testing, with this, managed to find a large number of errors and save the QA team from having to check the main process pipeline manually (before about 1-2 days per week were regularly spent on this).
+\item Moved the common code from microservices to libraries that led to a readability increase and also allowed code to be reused by other teams. About 30 microservices were refactored.
+\end{zitemize}
+
+%====================
+% EXPERIENCE E
+%====================
+\subsection{{Software Developer \hfill Jul 2017 --- Jun 2019}}
+\subtext{Yandex, full-time \hfill Saint Petersburg}
+\begin{zitemize}
+\item Found bottlenecks in internal build processes and thus shortened build time by two times (30 min $\rightarrow$ 15 min).
+\item Implemented caching in critical data retrieving places. These changes significantly reduced the number of HTTP requests and the load from the servers, sped up page loading up to 15\%.
+\item Took key role in the creation of a new high load service in production responsible for loans functionality. For the short-term period, our team managed to successfully release a stable version.
+\end{zitemize}
+
+\end{document}
