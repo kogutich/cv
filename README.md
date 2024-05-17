@@ -1,19 +1,19 @@
-## Environment
+# CV
 
-### Install LaTex on your System
+My CV (resume) based on LaTeX template by Timmy Chan.
 
-[TexLive Quick Install](https://www.tug.org/texlive/quickinstall.html)  
+## Install LaTeX
 
-#### Other install options:  
-**Ubuntu**
+[TexLive Quick Install](https://www.tug.org/texlive/quickinstall.html)
 
-[texlive packages](https://packages.ubuntu.com/search?keywords=texlive)  
-[latexmk packages](https://packages.ubuntu.com/search?keywords=latexmk)
+### Fedora
+
 ```sh
-apt install texlive texlive-fonts-extra latexmk
+sudo dnf install texlive-scheme-basic texlive-sourcesanspro texlive-moresize texlive-ly1 texlive-anyfontsize texlive-standalone texlive-import texlive-blindtext latexmk
 ```
 
-**MacOS**
+### MacOS
+
 ```sh
 # macOS MacTex Install
 brew --cask install mactex-no-gui
@@ -22,13 +22,14 @@ brew --cask install mactex-no-gui
 sudo tlmgr update --self && sudo tlmgr update --all
 ```
 
-### VS Code
-[LaTeX Workshop Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
-
 ## Compile
-1\. Using terminal  
+
+### In terminal  
+
 ```sh
-latexmk resume.tex
+latexmk -pdf -output-directory="build" resume.tex
 ```
-2\. Using VS Code  
-`VS Code` -> `Build LaTex project`
+
+### In VS Code
+
+Install [LaTeX Workshop Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), then `VS Code` -> `Build LaTex project`.
